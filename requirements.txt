@@ -1,0 +1,5 @@
+aiohttp
+pysqlite3
+rq
+redis
+bson

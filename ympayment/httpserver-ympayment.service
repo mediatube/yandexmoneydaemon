@@ -1,0 +1,12 @@
+[Unit]
+Description=Simple HTTPS YM Payment server
+
+[Service]
+WorkingDirectory=/home/easytrack/ympayment/
+ExecStart=/usr/bin/python3.6 /home/easytrack/ympayment/httpserver/httpsserver.py
+Restart=always
+RestartSec=10
+SyslogIdentifier=python-httpserverpayment
+User=root
+[Install]
+WantedBy=multi-user.target
